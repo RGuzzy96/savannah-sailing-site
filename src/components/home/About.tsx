@@ -5,7 +5,7 @@ import Reveal from "@/components/motion/Reveal";
 import { skillChips, images } from "@/content/resume";
 
 export default function About() {
-  return (
+  return false && (
     <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
       <SectionHeading eyebrow="About" title="A racer across disciplines" />
       <div className="grid items-start gap-12 md:grid-cols-[2fr_3fr]">

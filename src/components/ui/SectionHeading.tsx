@@ -3,7 +3,7 @@ import Reveal from "@/components/motion/Reveal";
 
 interface SectionHeadingProps {
   eyebrow: string;
-  title: string;
+  title?: string;
   lede?: string;
   dark?: boolean;
   className?: string;

@@ -16,9 +16,10 @@ export default function Hero() {
       <ImagePlaceholder
         src={images.hero}
         alt="Savannah on the ocean"
-        label="Hero · Savannah on the ocean (subject on left)"
+        label="Hero · Savannah on the ocean"
         priority
         sizes="100vw"
+        className="object-[28%_center] lg:object-center"
       />
       <div
         aria-hidden="true"

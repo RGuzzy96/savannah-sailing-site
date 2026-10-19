@@ -8,8 +8,8 @@ export default function Disciplines() {
     <section className="mx-auto max-w-6xl px-6 py-24 md:py-32">
       <SectionHeading
         eyebrow="Disciplines"
-        title="Three arenas, one standard"
-        lede="Offshore distance racing, umpired match racing, and one-design fleet racing."
+        // title="Three arenas, one standard"
+        // lede="Offshore distance racing, umpired match racing, and one-design fleet racing."
       />
       <StaggerGroup className="grid gap-6 md:grid-cols-3">
         {disciplines.map((d) => (
@@ -20,6 +20,7 @@ export default function Disciplines() {
             <div className="relative aspect-[16/10]">
               <ImagePlaceholder
                 src={images.disciplines[d.id]}
+                className={d.imagePosition}
                 label={`Photo · ${d.title}`}
                 alt={d.title}
                 sizes="(min-width: 768px) 33vw, 100vw"

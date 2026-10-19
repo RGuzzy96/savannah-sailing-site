@@ -12,6 +12,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
   { href: "/#contact", label: "Contact" },
+  { href: "/resume.pdf", label: "Resume", external: true },
 ];
 
 export default function Header() {
@@ -50,7 +51,9 @@ export default function Header() {
             <Link
               key={l.href}
               href={l.href}
-              aria-current={isActive(l.href) ? "page" : undefined}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
+              aria-current={!l.external && isActive(l.href) ? "page" : undefined}
               className={cn(
                 "text-sm font-medium transition-colors",
                 light

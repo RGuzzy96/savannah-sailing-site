@@ -1,5 +1,4 @@
-import { boats, certifications } from "@/content/resume";
-import Reveal from "@/components/motion/Reveal";
+import { boats } from "@/content/resume";
 
 export default function BoatsStrip() {
   const row = [...boats, ...boats];
@@ -17,16 +16,6 @@ export default function BoatsStrip() {
           ))}
         </div>
       </div>
-      <Reveal className="mx-auto mt-10 flex max-w-6xl flex-wrap justify-center gap-2 px-6">
-        {certifications.map((c) => (
-          <span
-            key={c}
-            className="rounded-full border border-navy-900/20 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.14em] text-navy-900"
-          >
-            {c}
-          </span>
-        ))}
-      </Reveal>
     </section>
   );
 }

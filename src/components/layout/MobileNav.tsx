@@ -11,7 +11,7 @@ export default function MobileNav({
   links,
   light = false,
 }: {
-  links: { href: string; label: string }[];
+  links: { href: string; label: string; external?: boolean }[];
   light?: boolean;
 }) {
   const [open, setOpen] = useState(false);
@@ -65,6 +65,8 @@ export default function MobileNav({
               <Link
                 key={l.href}
                 href={l.href}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noopener noreferrer" : undefined}
                 onClick={() => setOpen(false)}
                 className="font-display text-3xl tracking-tight text-navy-950"
               >

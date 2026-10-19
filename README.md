@@ -69,7 +69,7 @@ No component edits needed.
 ## Editing resume content
 
 - `src/content/resume.ts` — disciplines & highlights, journey timeline,
-  distinctions, boat list, certifications, skills chips, `images` map.
+  distinctions, boat list, skills chips, `images` map.
 - `src/content/site.ts` — name, tagline, location, `email`, `whatsapp`, and
   `socials` (currently `https://instagram.com/CHANGEME` /
   `https://facebook.com/CHANGEME` — replace with real URLs).
